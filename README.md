@@ -19,7 +19,7 @@
             box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
         }
         h1 {
-            color: #ff5733;
+            color: #32b7ff;
         }
         a {
             display: inline-block;
@@ -39,7 +39,7 @@
 <body>
 
     <div class="container">
-        <h1>Kodla Dev</h1>
+        <h1>ZDwindows</h1>
         <p>Websiteme hoşgeldin! Scratch hesabım,youtube kanalım ve birtanede diğer sitem var.</p>
         <a href="https://scratch.mit.edu/users/ZDwindows/" target="_blank">Scratch hesabıma git</a>
     </div>
