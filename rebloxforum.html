@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reblox Forum</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #1e1e1e;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header img {
+            height: 50px;
+            vertical-align: middle;
+        }
+        header h1 {
+            display: inline;
+            margin-left: 10px;
+            font-size: 28px;
+            vertical-align: middle;
+        }
+        .forum-container {
+            display: flex;
+            max-width: 1000px;
+            margin: 40px auto;
+            gap: 20px;
+        }
+        .categories {
+            width: 25%;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            padding: 20px;
+        }
+        .categories h2 {
+            margin-top: 0;
+        }
+        .categories ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .categories li {
+            margin: 10px 0;
+            cursor: pointer;
+            color: #333;
+        }
+        .categories li:hover {
+            color: #ff4500;
+        }
+        .topics {
+            width: 75%;
+        }
+        .topics h2 {
+            margin-top: 0;
+        }
+        .topic {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            padding: 15px 20px;
+            margin-bottom: 15px;
+        }
+        .topic p {
+            margin: 5px 0;
+            color: #555;
+        }
+        .new-topic {
+            display: block;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .new-topic button {
+            background-color: #ff4500;
+            border: none;
+            padding: 10px 20px;
+            color: white;
+            font-weight: bold;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        .new-topic button:hover {
+            background-color: #e03e00;
+        }
+        .search-bar {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .search-bar input {
+            width: 80%;
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="REBLoX-26-08-2025.png" alt="Reblox Logo">
+        <h1>Forum</h1>
+    </header>
+
+    <div class="forum-container">
+        <div class="categories">
+            <h2>Categories</h2>
+            <ul>
+                <li>General Discussion</li>
+                <li>Game Help</li>
+                <li>Builders Club</li>
+                <li>Off-Topic</li>
+            </ul>
+        </div>
+
+        <div class="topics">
+            <div class="search-bar">
+                <input type="text" placeholder="Search topics...">
+            </div>
+
+            <h2>Recent Topics</h2> 
+            <div class="topic">
+                <h3>The new forum page / Say welcome to Reblox! A new project.</h3>
+                <p>By [ADMINISTRATOR] Forumchan • 25 Aug 2025</p>
+            </div>
+
+            <div class="new-topic">
+                <button>Create New Topic</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
