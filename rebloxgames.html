@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Reblox - Games</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="navbar">
+    <img src="REBLoX-26-08-2025.png" alt="Reblox Logo" class="logo">
+    <a href="reblox.html">Home</a>
+    <a href="rebloxgames.html" class="active">Games</a>
+    <a href="buildersclubreblox.html">Builders Club</a>
+    <a href="rebloxcatalog.html">Catalog</a>
+    <a href="rebloxforum.html">Forum</a>
+    <a href="rebloxlogin.html">Login</a>
+  </div>
+
+  <div class="content">
+    <h1>Featured Games</h1>
+    <div class="game-grid">
+      <a href="crossroads.html" class="game-card">
+        <img src="crossroads.png" alt="Crossroads">
+        <p>Crossroads</p>
+      </a>
+
+      <a href="work.html" class="game-card">
+        <img src="work.png" alt="Work at a Pizza Place">
+        <p>Work at a Pizza Place</p>
+      </a>
+
+      <a href="natural.html" class="game-card">
+        <img src="natural.png" alt="Natural Disaster Survival">
+        <p>Natural Disaster Survival</p>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background: #333;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+.navbar .logo {
+    height: 40px;
+    margin-right: 20px;
+}
+.navbar a {
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
+}
+.navbar a.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.content {
+    padding: 20px;
+}
+
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.game-card {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    transition: 0.2s;
+}
+.game-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+.game-card:hover {
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+    transform: scale(1.05);
+}
+</style>
+<style>
+.play-btn {
+    background: #28a745;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+.play-btn:hover {
+    background: #218838;
+}
+</style>

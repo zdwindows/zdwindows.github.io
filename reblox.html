@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>REBLOX - A 2012 roblox fan site</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Verdana, Arial, sans-serif;
+      background-color: #E5E5E5;
+    }
+
+    .navbar {
+      background-color: #2C4A7A;
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .navbar img {
+      height: 40px;
+    }
+
+    .navbar ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 15px;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 6px 10px;
+      border-radius: 4px;
+    }
+
+    .navbar a:hover {
+      background-color: #1b3154;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+
+    .card h2 {
+      margin-top: 0;
+      color: #2C4A7A;
+    }
+
+    .games {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+    }
+
+    .game {
+      background: #f2f2f2;
+      padding: 10px;
+      border: 1px solid #bbb;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .sidebar {
+      background: #f8f8f8;
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 15px;
+      background: #2C4A7A;
+      color: white;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Üst Menü -->
+  <div class="navbar">
+    <img src="REBLoX-26-08-2025.png" alt="Reblox logo">
+    <ul>
+      <li><a href="reblox.html">Home</a></li>
+      <li><a href="rebloxgames.html">Games</a></li>
+      <li><a href="rebloxcatalog.html">Catalog</a></li>
+      <li><a href="buildersclubreblox.html">Builders Club</a></li>
+      <li><a href="rebloxforum.html">Forum</a></li>
+      <li><a href="rebloxlogin.html">Login</a></li>
+    </ul>
+  </div>
+
+  <!-- İçerik -->
+  <div class="container">
+    <div>
+      <div class="card">
+        <h2>Featured Games</h2>
+        <div class="games">
+          <div class="game">Brickbattle</div>
+          <div class="game">Natural Disaster Survival</div>
+          <div class="game">Work at a Pizza Place</div>
+          <div class="game">Obby 2012</div>
+          <div class="game">Crossroads</div>
+          <div class="game">Hide and Seek</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>News</h2>
+        <p>Welcome to the Reblox Roblox fan website! Relive the 2012 vibes 🎮</p>
+      </div>
+    </div>
+
+    <div class="sidebar">
+      <h2>Friends Online</h2>
+      <p>Player1</p>
+      <p>Player2</p>
+      <p>Player3</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    © 2012 Reblox Fan Project - Not affiliated with Roblox Corporation
+  </div>
+
+</body>
+</html>
