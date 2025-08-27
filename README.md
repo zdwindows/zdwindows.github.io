@@ -42,6 +42,7 @@
         <h1>ZDwindows</h1>
         <p>Websiteme hoşgeldin! Scratch hesabım,youtube kanalım ve birtanede diğer sitem var.</p>
         <a href="https://scratch.mit.edu/users/ZDwindows/" target="_blank">Scratch hesabıma git</a>
+        <a href="https://sites.google.com/view/winzdsite/ana-sayfa" target="_blank">Eski sitem</a>
     </div>
 
 </body>
