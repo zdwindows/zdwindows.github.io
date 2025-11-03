@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Codebit v5 — Community & Editor</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <img src="CODEBIT-03-11-2025.png" alt="site logosu" style="width: 90px;">
+    <div id="top-actions"></div>
+  </header>
+
+  <main class="container">
+    <!-- LANDING / AUTH -->
+    <section id="landing" class="card">
+      <div class="landing-left">
+        <h1>Codebit</h1>
+        <p>Blok tabanlı web editörün. Projelerini oluştur, paylaş ve diğerlerinin projelerini keşfet.</p>
+        <div class="auth">
+          <input id="auth-username" placeholder="Kullanıcı" />
+          <input id="auth-password" placeholder="Şifre" type="password" />
+          <div class="auth-actions">
+            <button id="btn-register">Kayıt Ol</button>
+            <button id="btn-login">Giriş Yap</button>
+          </div>
+        </div>
+      </div>
+      <div class="landing-right">
+        <h3>Son Projeler</h3>
+        <div id="recent-projects" class="recent"></div>
+      </div>
+    </section>
+
+    <!-- STUDIO -->
+    <section id="studio" class="card hidden" aria-hidden="true">
+      <div class="studio-top">
+        <div class="studio-title">
+          <h2 id="studio-welcome"></h2>
+          <div id="studio-meta"></div>
+        </div>
+        <div class="studio-controls">
+          <button id="btn-new-project">Yeni Proje</button>
+          <button id="btn-save-project" class="save-blue">Projeyi Kaydet</button>
+          <button id="btn-save-json">Dışa Aktar (.json)</button>
+          <input id="file-load" type="file" accept=".json" style="display:none">
+          <button id="btn-load-json">İçe Aktar</button>
+          <button id="btn-manage-studios">Stüdyolar</button>
+          <button id="btn-profile">Profil</button>
+          <button id="btn-logout" class="danger">Çıkış</button>
+        </div>
+      </div>
+
+      <div class="studio-body">
+        <aside class="sidebar card">
+          <h4>Projeleriniz</h4>
+          <div id="projects-list" class="projects-list"></div>
+          <h4>Stüdyolar</h4>
+          <div id="studio-list" class="projects-list"></div>
+        </aside>
+
+        <section class="editor-area card">
+          <div class="editor-header">
+            <input id="project-name" placeholder="Proje adı" />
+            <label><input id="public-check" type="checkbox"> Public (Herkese Açık)</label>
+            <select id="project-studio"><option value="">(Stüdyo seç)</option></select>
+            <button id="btn-attach-studio">Stüdyoya Ekle</button>
+          </div>
+
+          <div class="workspace-frame">
+            <div class="palette card">
+              <h4>Blok Paleti</h4>
+              <div class="palette-grid">
+                <button class="palette-btn" data-type="h1">H1</button>
+                <button class="palette-btn" data-type="p">P</button>
+                <button class="palette-btn" data-type="div">DIV</button>
+                <button class="palette-btn" data-type="button">BUTTON</button>
+                <button class="palette-btn" data-type="input">INPUT</button>
+                <button class="palette-btn" data-type="a">A (link)</button>
+                <button class="palette-btn" data-type="img">IMG</button>
+                <button class="palette-btn" data-type="ul">UL/LI</button>
+                <button class="palette-btn" data-type="table">TABLE</button>
+                <button class="palette-btn" data-type="iframe">IFRAME</button>
+                <button class="palette-btn" data-type="style">STYLE (CSS)</button>
+                <button class="palette-btn" data-type="script">SCRIPT (JS)</button>
+                <button class="palette-btn" data-type="raw">RAW HTML</button>
+              </div>
+            </div>
+
+            <div id="workspace" class="workspace card" aria-label="Çalışma Alanı">
+              <!-- free-form blocks (absolute) -->
+            </div>
+
+            <div class="preview card">
+              <div class="preview-top"><h4>Canlı HTML Önizleme</h4><button id="btn-codeview">Kod Görünümü</button></div>
+              <iframe id="preview-iframe" sandbox="allow-scripts"></iframe>
+              <div id="code-editor" class="code-editor hidden">
+                <div id="code-line-numbers" class="linenums"></div>
+                <textarea id="code-textarea" spellcheck="false"></textarea>
+                <div class="code-actions">
+                  <button id="btn-apply-code">Kodu Bloklara Uygula</button>
+                  <button id="btn-close-code">Kapat</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="editor-footer">
+            <button id="btn-delete-project" class="danger">Projeyi Sil</button>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <!-- PROFILE -->
+    <section id="profile-page" class="card hidden">
+      <button id="profile-back">Geri</button>
+      <h3 id="profile-username"></h3>
+      <div id="profile-meta"></div>
+      <h4>Public Projeler</h4>
+      <div id="profile-projects" class="projects-list"></div>
+      <h4>Stüdyolar</h4>
+      <div id="profile-studios" class="projects-list"></div>
+    </section>
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
